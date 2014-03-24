@@ -83,3 +83,6 @@ set noeb
 set novb
 set confirm
 set history=1000
+
+language messages zh_CN.utf-8
+set termencoding=cp936
