@@ -13,7 +13,7 @@ set sw=4
 set ts=4
 set et
 set smarttab
-set spell
+" set spell
 
 " 3.断行设置
 set tw=80
@@ -30,7 +30,7 @@ set ai
 set selectmode=
 set keymodel=
 set wildmenu
-colo torte
+" colo torte
 
 " 6.图形界面设置
 " set nowrap
@@ -53,7 +53,7 @@ set ru
 if (has("win32"))
 	if (has("gui_running"))
 		set guifont=Bitstream_Vera_Sans_Mono:h11:cANSI
-		set guifontwide=NSimSun:h11:cGB2312
+		set guifontwide=YouYuan:h13:cGB2312
         set guioptions-=T
         set guioptions-=m
 	endif
@@ -66,6 +66,7 @@ endif
 " 9.我的设置
 set nu
 set lines=40 columns=155
+set linespace=0
 set go=
 set ruler
 set showcmd
@@ -80,6 +81,8 @@ set cursorline
 " set guioptions-=T
 " set guioptions-=m
 set noeb
-set novb
+set vb t_vb=
 set confirm
 set history=1000
+
+set shell=bash
