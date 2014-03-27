@@ -42,7 +42,7 @@ set mousemodel=popup
 if (has("gui_running"))
 	set nowrap
 	set guioptions+=b
-	colo torte
+	colo murphy
 else
 	set wrap
 	colo ron
@@ -53,13 +53,14 @@ set ru
 if (has("win32"))
 	if (has("gui_running"))
 		set guifont=Bitstream_Vera_Sans_Mono:h11:cANSI
-		set guifontwide=YouYuan:h13:cGB2312
+		set guifontwide=YouYuan:h12:cGB2312
         set guioptions-=T
         set guioptions-=m
 	endif
 else
 	if (has("gui_running"))
 		set guifont=Bitstream\ Vera\ Sans\ Mono\ 11
+        set guifontwide=YouYuan:h12:cGB2312
 	endif
 endif
 
@@ -88,4 +89,7 @@ set history=1000
 language messages zh_CN.utf-8
 set termencoding=cp936
 
-set shell=bash
+" set shell=bash
+
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
