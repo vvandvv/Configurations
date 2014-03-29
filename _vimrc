@@ -89,7 +89,8 @@ set history=1000
 language messages zh_CN.utf-8
 set termencoding=cp936
 
-" set shell=bash
+" You must set env_value HOME to the GIT_HOME
+set shell=bash
 
 " You must set env_value VIMRUNTIME first
 if (has("gui_running"))
