@@ -44,8 +44,8 @@ if (has("gui_running"))
 	set guioptions+=b
 	colo murphy
 else
-	set wrap
-	colo ron
+	set nowrap
+	" colo ron
 endif
 
 " 8.ÊµÀýÅäÖÃÎÄ¼þ
@@ -91,5 +91,8 @@ set termencoding=cp936
 
 " set shell=bash
 
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
+" You must set env_value VIMRUNTIME first
+if (has("gui_running"))
+    source $VIMRUNTIME/delmenu.vim
+    source $VIMRUNTIME/menu.vim
+endif
