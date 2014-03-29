@@ -89,7 +89,7 @@ set history=1000
 language messages zh_CN.utf-8
 set termencoding=cp936
 
-" You must set env_value HOME to the GIT_HOME
+" You must add GIT_HOME\bin to your PATH env
 set shell=bash
 
 " You must set env_value VIMRUNTIME first
