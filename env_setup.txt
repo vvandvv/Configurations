@@ -1,0 +1,31 @@
+Only in windows:
+
+/
+if you installed the git, you will find the / is set to /path/to/where/you/install/git in your git-bash,
+but not in your cmd console. you need to create GIT_HOME with the the value above.
+
+~
+with git installed, this will be /path/to/your/user/directory/under/windows, like c:\users\andy.
+you don't need to create HOME as corresponding.
+
+VIM
+this is not set, so you need to create it manually, set it to /path/to/where/you/install/vim
+
+VIMRUNTIME
+set to $VIM/vim74 or the version(74) may be different.
+if you don't set it, you will use the default git-vim.
+
+PATH
+add the VIMRUNTIME and the GIT_HOME\bin to use vim and git under cmd. you can also use other staffs by doing this.
+you can add those two in your ENV not the global.
+
+solve the ls command show chinese charactors properly:
+in git-bash: alias ls='ls --show-control-chars --color=auto', set it in you .bashrc file.
+in cmd: doskey ls=ls --show-control-chars --color=auto $*
+
+github cannot use git protocol(perhaps in MIC only):
+using https, you can set proxy by add
+	export https_proxy='https://11210240012:201118@proxy.fudan.edu.cn:8080/'
+to your .bashrc file.
+
+the _vimrc file contains lots of lines to solve encoding problems, but i haven't listed them here by now, perhaps later.
