@@ -1,44 +1,47 @@
-" 1.基本设置
-set nocp
+" 1. basic setting
+set nocompatible
 set hls
 syntax on
 set backspace=indent,eol,start
 set whichwrap=b,s,<,>,[,]
+set iskeyword+=_,$,@,%,#,- 
 set encoding=UTF-8
 set ambiwidth=double
-filetype plugin indent on
+filetype on
+filetype plugin on 
+filetype indent on
 
-" 2.文本编辑设置
+" 2. editor setting
 set sw=4
 set ts=4
 set et
 set smarttab
 " set spell
 
-" 3.断行设置
+" 3. line spacing setting
 set tw=80
 set lbr
 set fo+=mB
 
-" 4.C/C++ 编码设置
+" 4. C/C++ coding
 set sm
 set cin
 set cino=:0g0t0(sus
 set ai
 
-" 5.其他设置
+" 5. other
 set selectmode=
 set keymodel=
 set wildmenu
 " colo torte
 
-" 6.图形界面设置
+" 6. gui setting
 " set nowrap
 set mousemodel=popup
 " set guioptions+=b
 " set guifont=Bitstream_Vera_Sans_Mono:h11:cANSI
 
-" 7.条件选择
+" 7. different gui setting
 if (has("gui_running"))
 	set nowrap
 	set guioptions+=b
@@ -48,8 +51,7 @@ else
 	" colo ron
 endif
 
-" 8.实例配置文件
-set ru
+" 8. different sys setting
 if (has("win32"))
 	if (has("gui_running"))
 		set guifont=Bitstream_Vera_Sans_Mono:h11:cANSI
@@ -64,12 +66,14 @@ else
 	endif
 endif
 
-" 9.我的设置
+" 9. my setting
+set ru
 set nu
+set showmatch
+set matchtime=5
 set lines=40 columns=155
 set linespace=0
 set go=
-set ruler
 set showcmd
 set scrolloff=3
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
@@ -78,11 +82,13 @@ set foldenable
 set foldmethod=manual
 set nobackup
 set noswapfile
+set bufhidden=hide 
 set cursorline
 " set guioptions-=T
 " set guioptions-=m
 set noeb
-set vb t_vb=
+set novb
+" set vb t_vb=
 set confirm
 set history=1000
 
