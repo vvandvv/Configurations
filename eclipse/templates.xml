@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="false" context="swt-statements" deleted="false" description="new Spinner" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.swt.spinner" name="Spinner">${spinnerType:newType(org.eclipse.swt.widgets.Spinner)} ${spinner:newName(org.eclipse.swt.widgets.Spinner)}= new ${spinnerType}(${parent:var(org.eclipse.swt.widgets.Composite)}, ${style:link(SWT.BORDER, 'SWT.WRAP | SWT.BORDER', 'SWT.READ_ONLY | SWT.BORDER', 'SWT.READ_ONLY | SWT.WRAP | SWT.BORDER', SWT.WRAP, SWT.READ_ONLY)});
+${spinner}.setLayoutData(new ${gridDataType:newType(org.eclipse.swt.layout.GridData)}(SWT.${horizontal:link(BEGINNING, CENTER, END, FILL)}, SWT.${vertical:link(CENTER, TOP, BOTTOM, FILL)}, ${hex:link(false, true)}, ${vex:link(false, true)}));
+${spinner}.setMaximum(${max:link(10)});
+${spinner}.setIncrement(${inc:link(1)});
+${imp:import(org.eclipse.swt.SWT)}${cursor}</template></templates>
