@@ -25,6 +25,7 @@ set sta                                              " 不同层级，不同缩�
 
 " 3. editor setting: line
 set lbr                                              " 在某些字符（breakat）才会显示换行(仅仅显示换行，不插入 eol)
+set breakat=" ^I!@*-+;:,.?，。"
 set fo+=mB                                           " format option 用某些字母表示
 
 " 4. C/C++ coding
@@ -72,11 +73,9 @@ set mh                                               " 输入时隐藏鼠标
 set sb                                               " 新窗口打开在现有窗口下面
 set spr                                              " 新窗口打开在现有窗口右边
 
-colo solarized                                       " 使用的配色方案：http://ethanschoonover.com/solarized#features
-
 " 7. gui setting
 if (has("gui_running"))
-    set bg=dark                                      " 使用浅色主题
+    set bg=light                                     " 使用浅色主题
     set mousem=popup                                 " 右键鼠标会弹出菜单
     set go-=T                                        " 去掉 toolbar
     set go-=m                                        " 去掉 menubar
@@ -97,11 +96,6 @@ else
     endif
 endif
 
-" to use bash in windows
-if(has("win32"))
-    set sh=bash                                        " You must add GIT_HOME\bin to your PATH env 
-endif
-
 " sovle encoding error dispaly
 if (has("gui_running"))                                " menu bar
     source $VIMRUNTIME/delmenu.vim
@@ -112,14 +106,18 @@ language messages zh_CN.utf-8                          " console display encodin
 " ∆ 使用 vundle 管理插件
 filet off                                            " 设置使用 vundle 管理插件
 set rtp+=$VIM_HOME/vimfiles/bundle/vundle.vim        " run time path 添加 vundle 
-call vundle#begin("$VIM_HOME/vimfiles/bundle")       " 插件存放的位置
+call vundle#begin('$VIM_HOME/vimfiles/bundle')       " 插件存放的位置
 " vundle 作者的 bundles
 Plugin 'gmarik/vundle.vim'
 " markdown syntac highlight
 Plugin 'Markdown'
+" solarized color theme
+Plugin 'altercation/vim-colors-solarized'
 " =====
 call vundle#end()
 filet plugin indent on                               " 文件类型自动判别，缩进，插件
+
+colo desert                                          " 默认使用的配色方案
 
 " ∆ 以下来自于 gmarik
 " auto commands
