@@ -3,7 +3,6 @@ set vb t_vb=                                         " 禁止闪屏和声音
 set lines=40 columns=160                             " Vim 窗口大小
 colo solarized
 
-set bg=light                                         " 使用浅色主题
 set mousem=popup                                     " 右键鼠标会弹出菜单
 set go-=T                                            " 去掉 toolbar
 set go-=m                                            " 去掉 menubar

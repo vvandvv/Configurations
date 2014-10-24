@@ -74,18 +74,13 @@ colo desert                                          " 使用的配色方案
 set bg=dark                                          " 使用深色主题
 
 if (has("win32")) 
-    language messages zh_CN.utf-8                    " windows console display encoding error
+    set termencoding=cp936
 endif
 
 " ∆ 使用 vundle 管理插件
 filet off                                            " 设置使用 vundle 管理插件
-if (has("win32"))
-    set rtp+=~/vimfiles/bundle/Vundle.vim        " run time path 添加 vundle 
-    call vundle#begin("~/vimfiles/bundle")       " 插件存放的位置
-else
-    set rtp+=~/.vim/bundle/Vundle.vim        " run time path 添加 vundle 
-    call vundle#begin("~/.vim/bundle")       " 插件存放的位置
-endif
+set rtp+=~/.vim/bundle/Vundle.vim        " run time path 添加 vundle 
+call vundle#begin("~/.vim/bundle")       " 插件存放的位置
 " vundle 作者的 bundles
 Plugin 'gmarik/Vundle.vim'
 " markdown syntac highlight
