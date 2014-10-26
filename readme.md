@@ -1,9 +1,9 @@
 Configurations
 ==============
 
-Configurations of Daily Use Software.
+  我的配置文件，主要是 vim 和 msysGit 在 windows 下的设置。vim 的设置在 ubuntu 下也是可用的。还有一些通用文件，例如字体文件和 HOSTS 文件。 
 
-some examples of HOW to Write readme.md file below:
+  以下是 GitHub 的 MD 格式要点： 
 
 大标题
 ===================================
@@ -32,25 +32,23 @@ some examples of HOW to Write readme.md file below:
         这里你可以输入一段代码
 
 ### 比如我们可以在多行文本框里输入一段代码,来一个Java版本的HelloWorld吧
-    public class HelloWorld {
+        public class HelloWorld {
+        
+        /**
+         * @param args
+         */
+        public static void main(String[] args) {
+            System.out.println("HelloWorld!");
+        }
 
-      /**
-      * @param args
-   */
-   public static void main(String[] args) {
-   System.out.println("HelloWorld!");
-
-   }
-
-    }
 ### 链接
-1.[点击这里你可以链接到www.google.com](http://www.google.com)<br />
-2.[点击这里我你可以链接到我的博客](http://guoyunsky.iteye.com)<br />
+1. [点击这里你可以链接到www.google.com](http://www.google.com)<br />
+2. [点击这里我你可以链接到我的博客](http://guoyunsky.iteye.com)<br />
 
-###只是显示图片
+### 只是显示图片
 ![github](http://github.com/unicorn.png "github")
 
-###想点击某个图片进入一个网页,比如我想点击github的icorn然后再进入www.github.com
+### 想点击某个图片进入一个网页,比如我想点击github的icorn然后再进入www.github.com
 [![image]](http://www.github.com/)
 [image]: http://github.com/github.png "github"
 
