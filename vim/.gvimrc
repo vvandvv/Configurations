@@ -18,6 +18,10 @@ if(has("win32"))
 " *linux*
 else                         
     set sh=zsh                                       
-    set guifont=Bitstream\ Vera\ Sans\ Mono\ 11      " 字体设置
-    set guifontwide=YouYuan:h12:cGB2312
+    set guifont=Bitstream\ Vera\ Sans\ Mono\ 14      " 字体设置
+    set guifontwide=YaHei\ Mono\ 15
 endif
+
+nnoremap <silent> <LocalLeader>gs :source ~/.gvimrc<CR>
+nnoremap <silent> <LocalLeader>ge :e ~/.gvimrc<CR>
+nnoremap <silent> <LocalLeader>gt :tabnew ~/.gvimrc<CR>
