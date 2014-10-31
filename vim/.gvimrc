@@ -17,7 +17,7 @@ if(has("win32"))
 else                         
     set sh=zsh                                       
     set gfn=Bitstream\ Vera\ Sans\ Mono\ 14      " 字体设置
-    set gfw=YaHei\ Mono\ 15
+    set gfw=YaHei\ Mono\ 14
 endif
 
 nnoremap <silent> <LocalLeader>gs :source ~/.gvimrc<CR>
