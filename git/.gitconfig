@@ -1,0 +1,17 @@
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	ft = fetch
+	up = push
+	glg = log --oneline --graph --decorate
+	dn = pull
+[user]
+[color]
+	ui = auto
+[push]
+	default = simple
+[log]
+	abbrevCommit = true
+[format]
